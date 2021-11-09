@@ -1,0 +1,11 @@
+@use "sass:math";
+
+$blue: rgb(88, 126, 252);
+$gray: rgb(247, 247, 247);
+$white: rgb(255, 255, 255);
+$orange: rgb(244, 160, 70);
+$browser-context: 16;
+
+@function rem($px, $content: $browser-context) {
+    @return #{math.div($px, $content)}rem;
+}

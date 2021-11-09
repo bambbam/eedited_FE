@@ -1,0 +1,51 @@
+@import '/components/_settings/variable.scss';
+
+.button {
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    border-radius: rem(10);
+    display: block;
+    font-size: rem(16);
+    font-weight: 600;
+    text-transform: upperycase;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+/* Size */
+.small {
+    padding: rem(8) rem(10);
+}
+
+.medium {
+    padding: 1.1em 1.3em;
+}
+
+.large {
+    padding: 1.7em 2.4em;   
+}
+
+/* Theme */
+.default {
+    color: black;
+    background: $white;
+}
+
+.orange {
+  color: $white;
+  background: $orange;
+}
+
+.gray{
+  background: $gray;
+}
+
+/* Disabled */
+.disabled {
+  color: var(--grey-2);
+  background: color(var(--grey-4) tint(40%));
+  border-color: var(--grey-4);
+  cursor: default;
+}
