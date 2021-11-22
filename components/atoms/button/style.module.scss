@@ -1,4 +1,5 @@
-@import '/components/_settings/variable.scss';
+@import '/components/_settings/color.scss';
+@import '/components/_settings/function.scss';
 
 .button {
     -webkit-appearance: none;
@@ -24,7 +25,7 @@
 }
 
 .large {
-    padding: 1.7em 2.4em;   
+    padding: 1.7em 2.4em;
 }
 
 /* Theme */
@@ -34,18 +35,18 @@
 }
 
 .orange {
-  color: $white;
-  background: $orange;
+    color: $white;
+    background: $orange;
 }
 
-.gray{
-  background: $gray;
+.gray {
+    background: $gray;
 }
 
 /* Disabled */
 .disabled {
-  color: var(--grey-2);
-  background: color(var(--grey-4) tint(40%));
-  border-color: var(--grey-4);
-  cursor: default;
+    color: var(--grey-2);
+    background: color(var(--grey-4) tint(40%));
+    border-color: var(--grey-4);
+    cursor: default;
 }
