@@ -1,3 +1,92 @@
 {
-  "extends": "next/core-web-vitals"
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true, // node 사용 OK
+        "browser": true, // browser 인식 Ok
+        "es6": true // es6 버전사용 OK
+    },
+
+    "extends": [
+        "next/core-web-vitals",
+        "prettier",
+        "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "no-console": "warn",
+        "indent": "off",
+        "quotes": ["error", "single"],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 0
+            }
+        ],
+        "@typescript-eslint/no-inferrable-types": "off",
+        "brace-style": [2, "stroustrup"],
+        "@typescript-eslint/brace-style": [2, "stroustrup"],
+        "@typescript-eslint/no-explicit-any": "error",
+        "object-property-newline": [
+            "error",
+            {
+                "allowAllPropertiesOnSameLine": true
+            }
+        ],
+        "@typescript-eslint/typedef": [
+            "error",
+            {
+                "parameter": true,
+                "arrowParameter": true,
+                "memberVariableDeclaration": true,
+                "propertyDeclaration": true
+            }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "args": "none"
+            }
+        ],
+        "@typescript-eslint/type-annotation-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true,
+                "overrides": {
+                    "arrow": {
+                        "before": true,
+                        "after": true
+                    }
+                }
+            }
+        ],
+        "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error",
+            {
+                "enums": true,
+                "typedefs": true,
+                "ignoreTypeReferences": false
+            }
+        ],
+        "no-constant-condition": "off",
+        "max-len": "off",
+        "import/prefer-default-export": "off",
+        "import/extensions": ["off"],
+        "import/first": "off",
+        "object-curly-newline": "off",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "import/no-unresolved": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4]
+    }
 }
